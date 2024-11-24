@@ -1,0 +1,18 @@
+
+window.alert('Case3 ---> multiplication and division of two numbers')
+
+var FirstNumber=prompt('Enter First Number for multiplcation & division');
+var secondNumber=prompt('Enter Second Number for multiplication & division');
+
+var multiplResult=FirstNumber * secondNumber;
+console.log(multiplResult + '   Multiplication Result');
+document.getElementById('case3-2').innerText='First No ' + FirstNumber +', Second No ' + secondNumber +', Multiplication Result =  ' + multiplResult;
+
+if(secondNumber==0){
+    console.log('Division By zero in not allowed enter avalid number'); 
+    document.getElementById('case3').innerText='Division By zero in not allowed enter avalid number';
+}else{
+var divisionResult=FirstNumber / secondNumber;
+console.log(divisionResult);
+document.getElementById('case3').innerText='First No ' + FirstNumber +', Second No ' + secondNumber +',  Division Result =  ' + divisionResult;
+}

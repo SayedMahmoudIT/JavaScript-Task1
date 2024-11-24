@@ -1,0 +1,17 @@
+
+window.alert('Case5 ---> two numbers sum is 50 or one at least equal 50')
+
+var FirstNumber=Number(prompt('Enter First Number to test sum with value 50'));
+var secondNumber=Number(prompt('Enter Second Number to test sum with value 50'));
+var result=false;
+
+if(FirstNumber==50){
+    result=true;
+}else if(secondNumber==50){
+    result=true;
+}else if(FirstNumber + secondNumber==50){
+    result=true;
+}else{result=false;}
+
+console.log(result);
+document.getElementById('case5').innerText='First Number ' + FirstNumber + ',  Second Number '+ secondNumber + ',  Result = ' +result;
